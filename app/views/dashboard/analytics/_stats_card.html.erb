@@ -1,0 +1,45 @@
+<%# Stats Card Partial
+   Accepts:
+   - title: String - card title (e.g., "Language", "Workspace", "Platform")
+   - icon: String - icon text/emoji for the card header
+   - data: Hash - name => minutes mapping
+%>
+
+<div class="bg-white rounded-xl p-5 shadow-sm">
+  <!-- Card Header -->
+  <div class="flex items-center space-x-2 mb-4">
+    <span class="text-slate-500 font-mono"><%= icon %></span>
+    <h3 class="text-lg font-semibold text-slate-900"><%= title %></h3>
+  </div>
+
+  <!-- Card Content -->
+  <% if data.blank? || data.empty? %>
+    <div class="text-slate-400 text-sm py-4 text-center">
+      No data for this period
+    </div>
+  <% else %>
+    <% max_minutes = data.values.max || 1 %>
+    <div class="space-y-3">
+      <% data.sort_by { |_, minutes| -minutes }.each do |name, minutes| %>
+        <div class="flex items-center justify-between">
+          <div class="flex-1 min-w-0 mr-4">
+            <div class="flex items-center justify-between mb-1">
+              <span class="text-sm text-slate-700 truncate flex items-center">
+                <% if title == "Language" %>
+                  <span class="mr-2"><%= language_icon(name) %></span>
+                <% end %>
+                <%= name %>
+              </span>
+              <span class="text-sm text-slate-500 ml-2 whitespace-nowrap"><%= format_minutes(minutes) %></span>
+            </div>
+            <!-- Progress Bar -->
+            <div class="bg-slate-100 rounded-full h-1.5">
+              <% width_percent = max_minutes > 0 ? (minutes.to_f / max_minutes * 100).round : 0 %>
+              <div class="bg-blue-500 rounded-full h-1.5" style="width: <%= width_percent %>%"></div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>

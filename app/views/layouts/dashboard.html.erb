@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Dashboard - CodeTime" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900 min-h-screen">
+    <% if flash[:notice] %>
+      <div class="bg-emerald-500 text-white text-center py-3 text-sm"><%= flash[:notice] %></div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="bg-red-500 text-white text-center py-3 text-sm"><%= flash[:alert] %></div>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

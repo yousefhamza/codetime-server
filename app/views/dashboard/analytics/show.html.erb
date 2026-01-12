@@ -1,0 +1,64 @@
+<% content_for(:title) { "Analytics - CodeTime Dashboard" } %>
+
+<div class="min-h-screen">
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center space-x-2">
+          <span class="text-slate-500 font-mono text-lg">{ }</span>
+          <h1 class="text-xl font-semibold text-slate-900">CodeTime Dashboard</h1>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="text-sm text-slate-500"><%= current_dashboard_user.email %></span>
+          <%= button_to "Logout", dashboard_logout_path, method: :delete, class: "text-sm text-slate-500 hover:text-slate-700" %>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <!-- Period Selector -->
+    <div class="mb-8">
+      <div class="inline-flex rounded-lg border border-slate-200 bg-white p-1">
+        <%= link_to "Today",
+            dashboard_root_path(period: "today"),
+            class: "px-4 py-2 text-sm font-medium rounded-md transition-colors #{@period == 'today' ? 'bg-blue-500 text-white' : 'text-slate-600 hover:text-slate-900'}" %>
+        <%= link_to "7 Days",
+            dashboard_root_path(period: "7d"),
+            class: "px-4 py-2 text-sm font-medium rounded-md transition-colors #{@period == '7d' ? 'bg-blue-500 text-white' : 'text-slate-600 hover:text-slate-900'}" %>
+        <%= link_to "30 Days",
+            dashboard_root_path(period: "30d"),
+            class: "px-4 py-2 text-sm font-medium rounded-md transition-colors #{@period == '30d' ? 'bg-blue-500 text-white' : 'text-slate-600 hover:text-slate-900'}" %>
+      </div>
+    </div>
+
+    <!-- Summary Stats -->
+    <div class="mb-8">
+      <div class="bg-white rounded-xl p-5 shadow-sm inline-block">
+        <div class="text-sm text-slate-500 mb-1">Total Coding Time</div>
+        <div class="text-3xl font-bold text-slate-900"><%= format_minutes(@total_minutes) %></div>
+      </div>
+    </div>
+
+    <!-- Stats Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      <%= render "stats_card", title: "Language", icon: "{ }", data: @language_data %>
+      <%= render "stats_card", title: "Workspace", icon: "folder", data: @workspace_data %>
+      <%= render "stats_card", title: "Platform", icon: "desktop", data: @platform_data %>
+    </div>
+
+    <!-- Time Series Chart -->
+    <div class="bg-white rounded-xl p-5 shadow-sm">
+      <h3 class="text-lg font-semibold text-slate-900 mb-4">Activity Over Time</h3>
+      <div
+        data-controller="timeseries-chart"
+        data-timeseries-chart-data-value="<%= @time_series_data.to_json %>"
+        class="h-64"
+      >
+        <!-- Chart will be rendered here by Stimulus controller -->
+      </div>
+    </div>
+  </main>
+</div>
