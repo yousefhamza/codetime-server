@@ -52,9 +52,9 @@ class AnalyticsCalculatorTest < ActiveSupport::TestCase
     assert_equal({}, calculator.time_by_platform)
   end
 
-  test "empty events returns empty array for time_series_by_language" do
+  test "empty events returns array with empty entry for time_series_by_language" do
     calculator = AnalyticsCalculator.new(@user, TEST_DAY, FROZEN_TIME)
-    assert_equal([], calculator.time_series_by_language)
+    assert_equal([ { date: TEST_DAY.to_date, data: {} } ], calculator.time_series_by_language)
   end
 
   # ============================================
