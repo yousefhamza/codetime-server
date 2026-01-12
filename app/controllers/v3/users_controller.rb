@@ -37,9 +37,9 @@ class V3::UsersController < ApplicationController
     minutes_param = params[:minutes].to_i
     start_time = Time.current - minutes_param.minutes
 
-    events = current_user.event_logs.where("event_time >= ?", start_time)
+    events = current_user.event_logs.where("event_time >= ?", start_time).order(event_time: :asc)
 
-    calculator = TimeCalculator.new(events, start_time: start_time, end_time: Time.current)
+    calculator = TimeCalculator.new(events)
     calculated_minutes = calculator.calculate
 
     render json: { minutes: calculated_minutes }
