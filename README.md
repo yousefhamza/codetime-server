@@ -2,7 +2,15 @@
 
 A Rails 8 backend for the CodeTime VS Code extension. Tracks coding time by logging events and calculating duration using a gap-based algorithm.
 
-Original server being replaced: # https://api.codetime.dev
+
+
+## Integration
+Replace original server being replaced: # https://api.codetime.dev
+<img width="926" height="437" alt="Screenshot 2026-01-12 at 6 14 52 PM" src="https://github.com/user-attachments/assets/e8c2b6b9-5e23-4e9a-9e0b-3858eaf9914b" />
+
+Add your token via VSCode commands like this (steps to generate the token below)
+<img width="931" height="169" alt="Screenshot 2026-01-12 at 6 15 02 PM" src="https://github.com/user-attachments/assets/6a473626-d0db-4abf-a705-6a28c5bda54a" />
+
 
 ## Requirements
 
