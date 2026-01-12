@@ -1,0 +1,18 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-7e4j43 sitelibdir\=./.gem.20260112-45294-7e4j43 clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-7e4j43 sitelibdir\=./.gem.20260112-45294-7e4j43
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-7e4j43 sitelibdir\=./.gem.20260112-45294-7e4j43 install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20260112-45294-7e4j43/skiptrace/internal
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-7e4j43 sitelibdir\=./.gem.20260112-45294-7e4j43 clean

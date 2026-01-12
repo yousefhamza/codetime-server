@@ -1,0 +1,25 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/json-2.18.0/ext/json/ext/parser
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+checking for rb_enc_interned_str() in ruby/encoding.h... yes
+checking for rb_str_to_interned_str() in ruby.h... yes
+checking for rb_hash_new_capa() in ruby.h... yes
+checking for rb_hash_bulk_insert() in ruby.h... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+checking for arm_neon.h... yes
+checking for cpuid.h... no
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/json-2.18.0/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-i70sz9 sitelibdir\=./.gem.20260112-45294-i70sz9 clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/json-2.18.0/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-i70sz9 sitelibdir\=./.gem.20260112-45294-i70sz9
+compiling parser.c
+linking shared-object json/ext/parser.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/json-2.18.0/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-i70sz9 sitelibdir\=./.gem.20260112-45294-i70sz9 install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20260112-45294-i70sz9/json/ext
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/json-2.18.0/ext/json/ext/parser
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-i70sz9 sitelibdir\=./.gem.20260112-45294-i70sz9 clean

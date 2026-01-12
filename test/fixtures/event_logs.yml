@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  project: my_project
+  language: ruby
+  relative_file: app/models/user.rb
+  absolute_file: /home/user/my_project/app/models/user.rb
+  editor: vscode
+  platform: darwin
+  platform_arch: arm64
+  event_time: 2026-01-12 12:20:19
+  event_type: fileEdited
+  operation_type: write
+  git_origin: https://github.com/user/my_project.git
+  git_branch: main
+
+two:
+  user: two
+  project: another_project
+  language: javascript
+  relative_file: src/index.js
+  absolute_file: /home/user/another_project/src/index.js
+  editor: vscode
+  platform: linux
+  platform_arch: x64
+  event_time: 2026-01-12 12:25:19
+  event_type: fileSaved
+  operation_type: write
+  git_origin: https://github.com/user/another_project.git
+  git_branch: develop

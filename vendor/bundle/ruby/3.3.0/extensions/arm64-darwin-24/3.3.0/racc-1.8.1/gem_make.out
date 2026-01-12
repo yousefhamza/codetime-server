@@ -1,0 +1,18 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-d3yr0f sitelibdir\=./.gem.20260112-45294-d3yr0f clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-d3yr0f sitelibdir\=./.gem.20260112-45294-d3yr0f
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-d3yr0f sitelibdir\=./.gem.20260112-45294-d3yr0f install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20260112-45294-d3yr0f/racc
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-d3yr0f sitelibdir\=./.gem.20260112-45294-d3yr0f clean

@@ -1,0 +1,19 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe() in ruby.h... yes
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-3kifd0 sitelibdir\=./.gem.20260112-45294-3kifd0 clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-3kifd0 sitelibdir\=./.gem.20260112-45294-3kifd0
+compiling escape.c
+linking shared-object erb/escape.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-3kifd0 sitelibdir\=./.gem.20260112-45294-3kifd0 install
+/usr/bin/install -c -m 0755 escape.bundle ./.gem.20260112-45294-3kifd0/erb
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/erb-6.0.1/ext/erb/escape
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-3kifd0 sitelibdir\=./.gem.20260112-45294-3kifd0 clean

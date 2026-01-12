@@ -1,0 +1,23 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.20.1/ext/bootsnap
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for fstatat() in sys/stat.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-n0fi02 sitelibdir\=./.gem.20260112-45294-n0fi02 clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-n0fi02 sitelibdir\=./.gem.20260112-45294-n0fi02
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-n0fi02 sitelibdir\=./.gem.20260112-45294-n0fi02 install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20260112-45294-n0fi02/bootsnap
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.20.1/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-n0fi02 sitelibdir\=./.gem.20260112-45294-n0fi02 clean

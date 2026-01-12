@@ -1,0 +1,19 @@
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/stringio-3.2.0/ext/stringio
+/Users/yosefhamza/.local/share/mise/installs/ruby/3.3.10/bin/ruby extconf.rb
+checking for rb_io_mode_t in ruby/io.h... no
+creating Makefile
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/stringio-3.2.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-5l3d9v sitelibdir\=./.gem.20260112-45294-5l3d9v clean
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/stringio-3.2.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-5l3d9v sitelibdir\=./.gem.20260112-45294-5l3d9v
+compiling stringio.c
+linking shared-object stringio.bundle
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/stringio-3.2.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-5l3d9v sitelibdir\=./.gem.20260112-45294-5l3d9v install
+/usr/bin/install -c -m 0755 stringio.bundle ./.gem.20260112-45294-5l3d9v
+
+current directory: /Users/yosefhamza/Repos/codetime/codetime-server/vendor/bundle/ruby/3.3.0/gems/stringio-3.2.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20260112-45294-5l3d9v sitelibdir\=./.gem.20260112-45294-5l3d9v clean
