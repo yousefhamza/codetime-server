@@ -5,7 +5,7 @@ A Rails 8 backend for the CodeTime VS Code extension. Tracks coding time by logg
 
 
 ## Integration
-Replace original server being replaced: # https://api.codetime.dev
+Replace original server from https://api.codetime.dev to local host
 <img width="926" height="437" alt="Screenshot 2026-01-12 at 6 14 52 PM" src="https://github.com/user-attachments/assets/e8c2b6b9-5e23-4e9a-9e0b-3858eaf9914b" />
 
 Add your token via VSCode commands like this (steps to generate the token below)
