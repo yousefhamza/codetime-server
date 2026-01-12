@@ -3,6 +3,17 @@
 require "test_helper"
 
 class ApiWorkflowTest < ActionDispatch::IntegrationTest
+  # Freeze time to January 1st, 2025 at 6:00 PM for all tests
+  FROZEN_TIME = Time.utc(2025, 1, 1, 18, 0, 0)
+  TEST_DAY = Time.utc(2025, 1, 1, 0, 0, 0)
+
+  setup do
+    travel_to FROZEN_TIME
+  end
+
+  teardown do
+    travel_back
+  end
   # ============================================
   # Test 1: Complete workflow - log events then query minutes
   # ============================================

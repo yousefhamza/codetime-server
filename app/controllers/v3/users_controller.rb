@@ -39,7 +39,7 @@ class V3::UsersController < ApplicationController
 
     events = current_user.event_logs.where("event_time >= ?", start_time)
 
-    calculator = TimeCalculator.new(events, start_time: start_time)
+    calculator = TimeCalculator.new(events, start_time: start_time, end_time: Time.current)
     calculated_minutes = calculator.calculate
 
     render json: { minutes: calculated_minutes }
